@@ -3,28 +3,25 @@ using UnityEngine;
 
 public class Slime : MonoBehaviour
 {
-    [SerializeField] private float _jumpForce = 20f;
     [SerializeField] private float _patrolDuration = 2f;
-    [SerializeField] private float _agrRange = 10f;
-    [SerializeField] private float _moveSpeed = 5f;
-
     [SerializeField] private int _health = 10;
-    [SerializeField] private int _damage = 1;
+   
 
-    [SerializeField] private Transform _groundChecker;
-    [SerializeField] private LayerMask groundLayer;
-
-    private float groundCheckRadius = 0.1f;
-    private bool _isGrounded;
-    private SpriteRenderer _spriteRenderer;
     private Rigidbody2D _rigidbody2D;
-    private Transform _target;
     private bool _isPatrolling;
+    private Mover _mover;
+    private Jumper _jumper;
+    private GroundChecker _groundChecker;
+    private PlayerFounder _playerFounder;
+    private Attacker _attacker;
 
     private void Awake()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
-        _spriteRenderer = GetComponent<SpriteRenderer>();
+        _jumper = GetComponent<Jumper>();
+        _mover = GetComponent<Mover>();
+        _groundChecker = GetComponent<GroundChecker>();
+        _playerFounder = GetComponent<PlayerFounder>();
     }
 
     private void Start()
@@ -34,9 +31,7 @@ public class Slime : MonoBehaviour
 
     private void Update()
     {
-        FindPlayer();
-
-        if (_target != null)
+        if (_playerFounder.GetTarget() != null)
         {
             StopCoroutine(Patrol());
             ChasePlayer();
@@ -50,61 +45,22 @@ public class Slime : MonoBehaviour
         }
     }
 
-    private void FindPlayer()
-    {
-        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, _agrRange);
-
-        foreach (var hit in hits)
-        {
-            if (hit.TryGetComponent<PlayerMovement>(out PlayerMovement player))
-            {
-                _target = player.transform;
-                return; 
-            }
-        }
-
-        _target = null;
-    }
-
     private void Jump()
     {
-        _isGrounded = Physics2D.OverlapCircle(_groundChecker.position, groundCheckRadius, groundLayer);
-
-        if (_isGrounded)
-        {
-            _rigidbody2D.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
-        }
+        _jumper.Jump(_groundChecker.IsGrounded(), _rigidbody2D);
     }
 
-    private void Move(Vector2 direction)
+    private void Move(float direction)
     {
-        _rigidbody2D.velocity = new Vector2(direction.x * _moveSpeed, _rigidbody2D.velocity.y);
-        FlipSprite();
-    }
-
-    private void FlipSprite()
-    {
-        if (_rigidbody2D.velocity.x > 0)
-        {
-            _spriteRenderer.flipX = false;
-        }
-        else if (_rigidbody2D.velocity.x < 0)
-        {
-            _spriteRenderer.flipX = true;
-        }
+        _mover.Move(direction, _rigidbody2D);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.TryGetComponent<PlayerMovement>(out PlayerMovement player))
+        if (collision.collider.TryGetComponent(out Character player))
         {
-            Attack(player);
+            _attacker.Attack(player);
         }
-    }
-
-    private void Attack(PlayerMovement player)
-    {
-        player.TakeDamage(_damage);
     }
 
     public void TakeDamage(int damage)
@@ -124,7 +80,7 @@ public class Slime : MonoBehaviour
 
     private IEnumerator Patrol()
     {
-        while (_target == null) 
+        while (_playerFounder.GetTarget() == null) 
         {
             _isPatrolling = true;
             Move(SetRandomPatrolDirection());
@@ -135,13 +91,15 @@ public class Slime : MonoBehaviour
     private void ChasePlayer()
     {
         _isPatrolling = false;
-        Vector2 direction = ((Vector2)_target.position - (Vector2)transform.position).normalized;
+        float direction = _playerFounder.GetTarget().position.x - transform.position.x;
         Jump();
         Move(direction);
     }
 
-    private Vector2 SetRandomPatrolDirection()
+    private float SetRandomPatrolDirection()
     {
-        return new Vector2(Random.Range(-1f, 1f), 0).normalized;
+        float rightDirection = 1f;
+        float leftDirection = -1f;
+        return Random.Range(-leftDirection, rightDirection);
     }
 }
