@@ -1,6 +1,7 @@
 public interface IDamageable
 {
-    void TakeDamage(int damage);
-    void Die();
+    public int health {  get; }
+    public void TakeDamage(int damage);
+    public void Die();
 }
 

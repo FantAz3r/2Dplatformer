@@ -1,12 +1,9 @@
 using System.Collections;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-public class Slime : MonoBehaviour, IDamageable
+public class Slime : MonoBehaviour
 {
-    [SerializeField] private float _patrolDuration = 2f;
-    [SerializeField] private int _health = 10;
-   
-
     private Rigidbody2D _rigidbody2D;
     private bool _isPatrolling;
     private Mover _mover;
@@ -14,43 +11,47 @@ public class Slime : MonoBehaviour, IDamageable
     private GroundChecker _groundChecker;
     private PlayerFounder _playerFounder;
     private Attacker _attacker;
-    private WaitForSeconds _wait;
+    private Health _health;
+    private Patruller _patruller;
 
     private void Awake()
     {
+        _attacker = GetComponent<Attacker>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _jumper = GetComponent<Jumper>();
         _mover = GetComponent<Mover>();
         _groundChecker = GetComponent<GroundChecker>();
         _playerFounder = GetComponent<PlayerFounder>();
-        _wait = new WaitForSeconds(_patrolDuration);
+        _health = GetComponent<Health>();
+        _patruller = GetComponent<Patruller>();
     }
 
     private void Start()
     {
-        StartCoroutine(Patrol());
+        StartCoroutine(_patruller.Patrol());
     }
 
     private void Update()
     {
         if (_playerFounder.GetTarget() != null)
         {
-            StopCoroutine(Patrol());
+            StopCoroutine(_patruller.Patrol());
             ChasePlayer();
         }
         else
         {
             if (_isPatrolling == false)
             {
-                StartCoroutine(Patrol());
+                _isPatrolling = true;
+                StartCoroutine(_patruller.Patrol());
             }
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.TryGetComponent(out Character player))
+        if (collision.collider.TryGetComponent(out Health target))
         {
-            _attacker.Attack(player);
+            _attacker.Attack(target);
         }
     }
 
@@ -64,45 +65,11 @@ public class Slime : MonoBehaviour, IDamageable
         _mover.Move(direction, _rigidbody2D);
     }
 
-
-    public void TakeDamage(int damage)
-    {
-        _health -= damage;
-
-        if (_health <= 0)
-        {
-            Die();
-        }
-    }
-
-    public void Die()
-    {
-        Destroy(gameObject);
-    }
-
-    private IEnumerator Patrol()
-    {
-        while (_playerFounder.GetTarget() == null) 
-        {
-            _isPatrolling = true;
-            Move(SetRandomPatrolDirection());
-            yield return _wait;
-        }
-    }
-
     private void ChasePlayer()
     {
         _isPatrolling = false;
         float direction = _playerFounder.GetTarget().position.x - transform.position.x;
         Jump();
         Move(direction);
-    }
-
-    private float SetRandomPatrolDirection()
-    {
-        float rightDirection = 1f;
-        float leftDirection = -1f;
-
-        return Random.Range(-leftDirection, rightDirection);
     }
 }

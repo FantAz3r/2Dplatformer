@@ -1,15 +1,14 @@
 using UnityEngine;
 
-public class Character : MonoBehaviour, IDamageable
+public class Character : MonoBehaviour
 {
-    [SerializeField] private int _health = 10;
-
     private AnimationUpdater _animationUpdater;
     private Rigidbody2D _rigidbody;
     private InputService _inputService;
     private Mover _mover;
     private Jumper _jumper;
     private GroundChecker _groundChecker;
+    private Health _health;
 
     private void Awake()
     {
@@ -19,6 +18,7 @@ public class Character : MonoBehaviour, IDamageable
         _jumper = GetComponent<Jumper>();
         _mover = GetComponent<Mover>();
         _groundChecker = GetComponent<GroundChecker>();
+        _health = GetComponent<Health>();
     }
 
     private void OnEnable()
@@ -52,18 +52,4 @@ public class Character : MonoBehaviour, IDamageable
         _jumper.Jump(_groundChecker.IsGrounded(), _rigidbody);
     }
 
-    public void TakeDamage(int damage)
-    {
-        _health -= damage;
-
-        if (_health <= 0)
-        {
-            Die();
-        }
-    }
-
-    public void Die()
-    {
-        Destroy(gameObject);
-    }
 }
