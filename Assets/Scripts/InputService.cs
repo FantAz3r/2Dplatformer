@@ -7,9 +7,9 @@ public class InputService : MonoBehaviour
 
     [SerializeField] private KeyCode JumpKey = KeyCode.Space;
 
-    public event Action Jump;
-    public event Action<float> MoveRight;
-    public event Action<float> MoveLeft;
+    public event Action Jumped;
+    public event Action<float> MovedRight;
+    public event Action<float> MovedLeft;
 
     private void Update()
     {
@@ -17,17 +17,17 @@ public class InputService : MonoBehaviour
 
         if (Input.GetKeyDown(JumpKey))
         {
-            Jump?.Invoke();
+            Jumped?.Invoke();
         }
 
         if (direction < 0)
         {
-            MoveRight?.Invoke(direction);
+            MovedRight?.Invoke(direction);
         }
 
         if (direction>0)
         {
-            MoveLeft?.Invoke(direction);
+            MovedLeft?.Invoke(direction);
         }
     }
 }

@@ -2,6 +2,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Collider2D))]
+
 public class Mover : MonoBehaviour
 {
     [SerializeField] private float _moveSpeed = 5f;

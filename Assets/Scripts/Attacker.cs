@@ -4,8 +4,9 @@ public class Attacker : MonoBehaviour
 {
     [SerializeField] private int _damage;
 
-    public void Attack(Character player)
+    public void Attack(IDamageable target)
     {
-        player.TakeDamage(_damage);
+        target.TakeDamage(_damage);
     }
+
 }

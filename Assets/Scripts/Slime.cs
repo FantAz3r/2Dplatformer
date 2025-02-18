@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class Slime : MonoBehaviour
+public class Slime : MonoBehaviour, IDamageable
 {
     [SerializeField] private float _patrolDuration = 2f;
     [SerializeField] private int _health = 10;
@@ -14,6 +14,7 @@ public class Slime : MonoBehaviour
     private GroundChecker _groundChecker;
     private PlayerFounder _playerFounder;
     private Attacker _attacker;
+    private WaitForSeconds _wait;
 
     private void Awake()
     {
@@ -22,6 +23,7 @@ public class Slime : MonoBehaviour
         _mover = GetComponent<Mover>();
         _groundChecker = GetComponent<GroundChecker>();
         _playerFounder = GetComponent<PlayerFounder>();
+        _wait = new WaitForSeconds(_patrolDuration);
     }
 
     private void Start()
@@ -44,6 +46,13 @@ public class Slime : MonoBehaviour
             }
         }
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.TryGetComponent(out Character player))
+        {
+            _attacker.Attack(player);
+        }
+    }
 
     private void Jump()
     {
@@ -55,13 +64,6 @@ public class Slime : MonoBehaviour
         _mover.Move(direction, _rigidbody2D);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.TryGetComponent(out Character player))
-        {
-            _attacker.Attack(player);
-        }
-    }
 
     public void TakeDamage(int damage)
     {
@@ -73,7 +75,7 @@ public class Slime : MonoBehaviour
         }
     }
 
-    private void Die()
+    public void Die()
     {
         Destroy(gameObject);
     }
@@ -84,7 +86,7 @@ public class Slime : MonoBehaviour
         {
             _isPatrolling = true;
             Move(SetRandomPatrolDirection());
-            yield return new WaitForSeconds(_patrolDuration);
+            yield return _wait;
         }
     }
 
@@ -100,6 +102,7 @@ public class Slime : MonoBehaviour
     {
         float rightDirection = 1f;
         float leftDirection = -1f;
+
         return Random.Range(-leftDirection, rightDirection);
     }
 }

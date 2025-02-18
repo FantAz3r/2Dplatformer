@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CoinSpawner : MonoBehaviour
 {
     [SerializeField] private int _coinsAmount;
     [SerializeField] private float _ditanceToGround;
-    [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private LayerMask _groundLayer;
     [SerializeField] private Coin _coinPrefab;
 
     private int _positionX;
@@ -44,9 +42,9 @@ public class CoinSpawner : MonoBehaviour
 
             spawnPosition = new Vector2(_positionX, _positionY);
 
-            if (Physics2D.Raycast(spawnPosition, Vector2.down, maxDistanceToGround, groundLayer))
+            if (Physics2D.Raycast(spawnPosition, Vector2.down, maxDistanceToGround, _groundLayer))
             {
-                if (Physics2D.OverlapCircle(spawnPosition, groundCheckerRadius, groundLayer) == false) 
+                if (Physics2D.OverlapCircle(spawnPosition, groundCheckerRadius, _groundLayer) == false) 
                 {
                     _isGetSpawnPosition = true;
                     return spawnPosition; 

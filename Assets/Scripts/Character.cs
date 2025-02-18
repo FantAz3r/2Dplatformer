@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Character : MonoBehaviour
+public class Character : MonoBehaviour, IDamageable
 {
     [SerializeField] private int _health = 10;
 
@@ -23,9 +23,9 @@ public class Character : MonoBehaviour
 
     private void OnEnable()
     {
-        _inputService.Jump += Jump;
-        _inputService.MoveLeft += Move;
-        _inputService.MoveRight += Move;
+        _inputService.Jumped += Jump;
+        _inputService.MovedLeft += Move;
+        _inputService.MovedRight += Move;
     }
 
     private void Update()
@@ -35,20 +35,20 @@ public class Character : MonoBehaviour
 
     private void OnDisable()
     {
-        _inputService.Jump -= Jump;
-        _inputService.MoveLeft -= Move;
-        _inputService.MoveRight -= Move;
+        _inputService.Jumped -= Jump;
+        _inputService.MovedLeft -= Move;
+        _inputService.MovedRight -= Move;
     }
 
     private void Move(float direction)
     {
         _mover.Move(direction, _rigidbody);
-        _animationUpdater.MoveUpdate(_rigidbody);
+        _animationUpdater.PlayMove(_rigidbody);
     }
 
     private void Jump()
     {
-        _animationUpdater.JumpAnimation();
+        _animationUpdater.PlayJump();
         _jumper.Jump(_groundChecker.IsGrounded(), _rigidbody);
     }
 
@@ -62,7 +62,7 @@ public class Character : MonoBehaviour
         }
     }
 
-    private void Die()
+    public void Die()
     {
         Destroy(gameObject);
     }
