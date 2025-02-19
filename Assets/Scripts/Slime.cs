@@ -1,6 +1,13 @@
-using System.Collections;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+
+[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Attacker))]
+[RequireComponent(typeof(PlayerFounder))]
+[RequireComponent(typeof(Jumper))]
+[RequireComponent(typeof(Mover))]
+[RequireComponent(typeof(GroundDetecter))]
+[RequireComponent(typeof(Health))]
+[RequireComponent(typeof(Patruller))]
 
 public class Slime : MonoBehaviour
 {
@@ -26,16 +33,11 @@ public class Slime : MonoBehaviour
         _patruller = GetComponent<Patruller>();
     }
 
-    private void Start()
-    {
-        StartCoroutine(_patruller.Patrol());
-    }
-
     private void Update()
     {
         if (_playerFounder.GetTarget() != null)
         {
-            StopCoroutine(_patruller.Patrol());
+            _patruller.StopPatrol(); 
             ChasePlayer();
         }
         else
@@ -43,7 +45,7 @@ public class Slime : MonoBehaviour
             if (_isPatrolling == false)
             {
                 _isPatrolling = true;
-                StartCoroutine(_patruller.Patrol());
+                _patruller.StartPatrol(); 
             }
         }
     }

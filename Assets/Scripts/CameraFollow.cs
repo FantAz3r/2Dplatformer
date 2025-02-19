@@ -8,9 +8,30 @@ namespace Platformer2D
         [SerializeField] private Vector3 _offset;
         [SerializeField] private Transform _player;
 
+        private void OnEnable()
+        {
+            if (_player != null)
+            {
+                Health playerHealth = _player.GetComponent<Health>();
+                playerHealth.Died += OnPlayerDied;
+            }
+        }
+
         private void LateUpdate()
         {
-            Follow(_player);
+            if (_player != null)
+            {
+                Follow(_player);
+            }
+        }
+
+        private void OnDisable()
+        {
+            if (_player != null)
+            {
+                Health playerHealth = _player.GetComponent<Health>();
+                playerHealth.Died += OnPlayerDied;
+            }
         }
 
         private void Follow(Transform target)
@@ -18,6 +39,11 @@ namespace Platformer2D
             Vector3 desiredPosition = target.position + _offset;
             Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, _smoothSpeed);
             transform.position = smoothedPosition;
+        }
+
+        private void OnPlayerDied()
+        {
+            _player = null;
         }
     }
 }

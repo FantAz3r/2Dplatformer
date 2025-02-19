@@ -1,5 +1,14 @@
 using UnityEngine;
 
+[RequireComponent (typeof(Rigidbody2D))]
+[RequireComponent(typeof(InputService))]
+[RequireComponent(typeof(AnimationUpdater))]
+[RequireComponent(typeof(Jumper))]
+[RequireComponent(typeof(Mover))]
+[RequireComponent(typeof(GroundDetecter))]
+[RequireComponent(typeof(Health))]
+[RequireComponent(typeof(Indicators))]
+
 public class Character : MonoBehaviour
 {
     private AnimationUpdater _animationUpdater;
@@ -48,7 +57,7 @@ public class Character : MonoBehaviour
     private void Move(float direction)
     {
         _mover.Move(direction, _rigidbody);
-        _animationUpdater.PlayMove(_rigidbody);
+        _animationUpdater.PlayMove(_rigidbody.velocity.x);
     }
 
     private void Jump()

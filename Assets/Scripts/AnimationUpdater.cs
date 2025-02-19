@@ -3,9 +3,9 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class AnimationUpdater : MonoBehaviour
 {
-    private const string Speed = nameof(Speed);
-    private const string IsGrounded = nameof(IsGrounded);
-    private const string Jump = nameof(Jump);
+    public static readonly int Speed = Animator.StringToHash(nameof(Speed));
+    public static readonly int Jump = Animator.StringToHash(nameof(Jump));
+    public static readonly int IsGrounded = Animator.StringToHash(nameof(IsGrounded));
 
     [SerializeField] private Animator _animator;
 
@@ -20,9 +20,9 @@ public class AnimationUpdater : MonoBehaviour
         _animator.SetBool(IsGrounded, false);
     }
 
-    public void PlayMove(Rigidbody2D rigidbody)
+    public void PlayMove(float velocity)
     {
-        _animator.SetFloat(Speed, Mathf.Abs(rigidbody.velocity.x));
+        _animator.SetFloat(Speed, Mathf.Abs(velocity));
     }
 
     public void SetGroundedTrigger(bool isGrounded)

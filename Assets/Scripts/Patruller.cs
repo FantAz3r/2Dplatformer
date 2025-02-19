@@ -8,19 +8,27 @@ public class Patruller : MonoBehaviour
     private Mover _mover;
     private Rigidbody2D _rigidbody2D;
     private WaitForSeconds _wait;
-    private PlayerFounder _playerFounder;
 
     private void Awake()
     {
         _mover = GetComponent<Mover>();
         _wait = new WaitForSeconds(_patrolDuration);
-        _playerFounder = GetComponent<PlayerFounder>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
-    public IEnumerator Patrol()
+    public void StartPatrol()
     {
-        while (_playerFounder.GetTarget() == null)
+        StartCoroutine(Patrol());
+    }
+
+    public void StopPatrol()
+    {
+        StopCoroutine(Patrol());  
+    }
+
+    private IEnumerator Patrol()
+    {
+        while (enabled) 
         {
             _mover.Move(SetRandomPatrolDirection(), _rigidbody2D);
             yield return _wait;
@@ -29,9 +37,6 @@ public class Patruller : MonoBehaviour
 
     private float SetRandomPatrolDirection()
     {
-        float rightDirection = 1f;
-        float leftDirection = -1f;
-
-        return Random.Range(-leftDirection, rightDirection);
+        return Random.Range(-1f, 1f); 
     }
 }
