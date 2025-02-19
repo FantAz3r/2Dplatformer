@@ -5,6 +5,8 @@ public class InputService : MonoBehaviour
 {
     private const string Horizontal = nameof(Horizontal);
 
+    public float direction { get; private set; }
+
     [SerializeField] private KeyCode JumpKey = KeyCode.Space;
 
     public event Action Jumped;
@@ -13,7 +15,7 @@ public class InputService : MonoBehaviour
 
     private void Update()
     {
-        float direction = Input.GetAxis(Horizontal); 
+        direction = Input.GetAxis(Horizontal); 
 
         if (Input.GetKeyDown(JumpKey))
         {

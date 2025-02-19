@@ -1,16 +1,27 @@
+using System;
 using UnityEngine;
 
 public class Health : MonoBehaviour, IDamageable
 {
-    public int health => _health;
-    
-    [SerializeField] private int _health = 10;
+    [SerializeField] private float _maxHealth = 10f;
+    [SerializeField] private float _currentHealth;
+
+    public float MaxHealth => _maxHealth;
+    public float CurrentHealth => _currentHealth;
+
+    public event Action<float> IsDamageTaken;
+
+    private void Awake()
+    {
+        _currentHealth = _maxHealth;
+    }
 
     public void TakeDamage(int damage)
     {
-        _health -= damage;
+        _currentHealth -= damage;
+        IsDamageTaken?.Invoke(_currentHealth);
 
-        if (_health <= 0)
+        if (_currentHealth <= 0)
         {
             Die();
         }

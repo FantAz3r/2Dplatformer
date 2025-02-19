@@ -1,6 +1,6 @@
 public interface IDamageable
 {
-    public int health {  get; }
+    public float MaxHealth {  get; }
     public void TakeDamage(int damage);
     public void Die();
 }

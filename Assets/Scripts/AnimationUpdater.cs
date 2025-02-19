@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
 public class AnimationUpdater : MonoBehaviour
 {
     private const string Speed = nameof(Speed);
@@ -26,14 +27,6 @@ public class AnimationUpdater : MonoBehaviour
 
     public void SetGroundedTrigger(bool isGrounded)
     {
-        if (isGrounded)
-        {
-            _animator.SetBool("IsGrounded", true);
-        }
-        else
-        {
-            _animator.SetBool("IsGrounded", false);
-        }
+        _animator.SetBool(IsGrounded, isGrounded);
     }
-        
 }

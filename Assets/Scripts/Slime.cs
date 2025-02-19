@@ -8,7 +8,7 @@ public class Slime : MonoBehaviour
     private bool _isPatrolling;
     private Mover _mover;
     private Jumper _jumper;
-    private GroundChecker _groundChecker;
+    private GroundDetecter _groundDetecter;
     private PlayerFounder _playerFounder;
     private Attacker _attacker;
     private Health _health;
@@ -20,7 +20,7 @@ public class Slime : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _jumper = GetComponent<Jumper>();
         _mover = GetComponent<Mover>();
-        _groundChecker = GetComponent<GroundChecker>();
+        _groundDetecter = GetComponent<GroundDetecter>();
         _playerFounder = GetComponent<PlayerFounder>();
         _health = GetComponent<Health>();
         _patruller = GetComponent<Patruller>();
@@ -57,7 +57,7 @@ public class Slime : MonoBehaviour
 
     private void Jump()
     {
-        _jumper.Jump(_groundChecker.IsGrounded(), _rigidbody2D);
+        _jumper.Jump(_groundDetecter.IsGrounded(), _rigidbody2D);
     }
 
     private void Move(float direction)

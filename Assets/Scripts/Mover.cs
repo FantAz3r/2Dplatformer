@@ -12,8 +12,7 @@ public class Mover : MonoBehaviour
 
         if (direction != 0)
         {
-            transform.localScale = new Vector3(Mathf.Sign(direction), 1, 1);
+            transform.localScale = new Vector2(Mathf.Sign(direction), 1);
         }
-        
     }
 }

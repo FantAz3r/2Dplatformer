@@ -7,8 +7,10 @@ public class Character : MonoBehaviour
     private InputService _inputService;
     private Mover _mover;
     private Jumper _jumper;
-    private GroundChecker _groundChecker;
+    private GroundDetecter _groundDetecter;
     private Health _health;
+    private Indicators _indicators;
+
 
     private void Awake()
     {
@@ -17,8 +19,9 @@ public class Character : MonoBehaviour
         _animationUpdater = GetComponent<AnimationUpdater>();
         _jumper = GetComponent<Jumper>();
         _mover = GetComponent<Mover>();
-        _groundChecker = GetComponent<GroundChecker>();
+        _groundDetecter = GetComponent<GroundDetecter>();
         _health = GetComponent<Health>();
+        _indicators = GetComponent<Indicators>();
     }
 
     private void OnEnable()
@@ -26,11 +29,12 @@ public class Character : MonoBehaviour
         _inputService.Jumped += Jump;
         _inputService.MovedLeft += Move;
         _inputService.MovedRight += Move;
+        _health.IsDamageTaken += UpdateHealthIndicator;
     }
 
     private void Update()
     {
-        _animationUpdater.SetGroundedTrigger(_groundChecker.IsGrounded());
+        _animationUpdater.SetGroundedTrigger(_groundDetecter.IsGrounded());
     }
 
     private void OnDisable()
@@ -38,6 +42,7 @@ public class Character : MonoBehaviour
         _inputService.Jumped -= Jump;
         _inputService.MovedLeft -= Move;
         _inputService.MovedRight -= Move;
+        _health.IsDamageTaken -= UpdateHealthIndicator;
     }
 
     private void Move(float direction)
@@ -49,7 +54,11 @@ public class Character : MonoBehaviour
     private void Jump()
     {
         _animationUpdater.PlayJump();
-        _jumper.Jump(_groundChecker.IsGrounded(), _rigidbody);
+        _jumper.Jump(_groundDetecter.IsGrounded(), _rigidbody);
     }
 
+    private void UpdateHealthIndicator(float currentHealth)
+    {
+        _indicators.ViewIndicator(currentHealth);
+    }
 }
