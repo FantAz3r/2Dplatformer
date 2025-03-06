@@ -30,12 +30,12 @@ public class CoinSpawner : MonoBehaviour
 
     private Vector2 GetRandomSpawnPosition()
     {
-        bool _isGetSpawnPosition = false;
+        bool isGetSpawnPosition = false;
         Vector2 spawnPosition;
         float groundCheckerRadius = 3f;
         float maxDistanceToGround = 7f;
 
-        while (_isGetSpawnPosition == false)
+        while (isGetSpawnPosition == false)
         {
             _positionX = (int)Random.Range(transform.position.x - transform.localScale.x / 2, transform.position.x + transform.localScale.x / 2);
             _positionY = (int)Random.Range(transform.position.y - transform.localScale.y / 2, transform.position.x + transform.localScale.y / 2);
@@ -46,7 +46,6 @@ public class CoinSpawner : MonoBehaviour
             {
                 if (Physics2D.OverlapCircle(spawnPosition, groundCheckerRadius, _groundLayer) == false) 
                 {
-                    _isGetSpawnPosition = true;
                     return spawnPosition; 
                 }
             }

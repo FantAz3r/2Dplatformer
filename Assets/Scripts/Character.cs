@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[RequireComponent (typeof(Rigidbody2D))]
+[RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(InputService))]
 [RequireComponent(typeof(AnimationUpdater))]
 [RequireComponent(typeof(Jumper))]
@@ -62,8 +62,11 @@ public class Character : MonoBehaviour
 
     private void Jump()
     {
-        _animationUpdater.PlayJump();
-        _jumper.Jump(_groundDetecter.IsGrounded(), _rigidbody);
+        if (_groundDetecter.IsGrounded() == true)
+        {
+            _animationUpdater.PlayJump();
+            _jumper.Jump(_rigidbody);
+        }
     }
 
     private void UpdateHealthIndicator(float currentHealth)

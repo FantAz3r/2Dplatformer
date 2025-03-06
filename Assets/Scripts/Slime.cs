@@ -37,7 +37,7 @@ public class Slime : MonoBehaviour
     {
         if (_playerFounder.GetTarget() != null)
         {
-            _patruller.StopPatrol(); 
+            _patruller.StopPatrol();
             ChasePlayer();
         }
         else
@@ -45,14 +45,17 @@ public class Slime : MonoBehaviour
             if (_isPatrolling == false)
             {
                 _isPatrolling = true;
-                _patruller.StartPatrol(); 
+                _patruller.StartPatrol();
             }
         }
     }
 
     private void Jump()
     {
-        _jumper.Jump(_groundDetecter.IsGrounded(), _rigidbody2D);
+        if (_groundDetecter.IsGrounded() == true)
+        {
+            _jumper.Jump(_rigidbody2D);
+        }
     }
 
     private void Move(float direction)

@@ -3,10 +3,11 @@ using UnityEngine;
 
 public class Wallet : MonoBehaviour
 {
-    public int Money { get; private set; }
+    private int _moneyPerCoin = 1;
 
     public event Action AmountChange;
-    private int _moneyPerCoin = 1;
+
+    public int Money { get; private set; }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

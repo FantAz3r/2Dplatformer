@@ -5,31 +5,30 @@ public class InputService : MonoBehaviour
 {
     private const string Horizontal = nameof(Horizontal);
 
-    public float direction { get; private set; }
-
     [SerializeField] private KeyCode JumpKey = KeyCode.Space;
 
     public event Action Jumped;
     public event Action<float> MovedRight;
     public event Action<float> MovedLeft;
+    public float Direction { get; private set; }
 
     private void Update()
     {
-        direction = Input.GetAxis(Horizontal); 
+        Direction = Input.GetAxis(Horizontal); 
 
         if (Input.GetKeyDown(JumpKey))
         {
             Jumped?.Invoke();
         }
 
-        if (direction < 0)
+        if (Direction < 0)
         {
-            MovedRight?.Invoke(direction);
+            MovedRight?.Invoke(Direction);
         }
 
-        if (direction>0)
+        if (Direction>0)
         {
-            MovedLeft?.Invoke(direction);
+            MovedLeft?.Invoke(Direction);
         }
     }
 }
