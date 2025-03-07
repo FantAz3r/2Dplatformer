@@ -7,9 +7,12 @@ public class InputService : MonoBehaviour
 
     [SerializeField] private KeyCode JumpKey = KeyCode.Space;
 
+    private int leftMouseButton = 0;
+
     public event Action Jumped;
     public event Action<float> MovedRight;
     public event Action<float> MovedLeft;
+    public event Action<Vector2> MouseButtonPushed;
     public float Direction { get; private set; }
 
     private void Update()
@@ -29,6 +32,12 @@ public class InputService : MonoBehaviour
         if (Direction>0)
         {
             MovedLeft?.Invoke(Direction);
+        }
+
+        if (Input.GetMouseButtonDown(leftMouseButton))
+        {
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            MouseButtonPushed?.Invoke(mousePosition);
         }
     }
 }

@@ -10,10 +10,5 @@ public class Mover : MonoBehaviour
     public void Move(float direction, Rigidbody2D rigidbody )
     {
         rigidbody.velocity = new Vector2(direction * _moveSpeed, rigidbody.velocity.y);
-
-        if (direction != 0)
-        {
-            transform.localScale = new Vector2(Mathf.Sign(direction), 1);
-        }
     }
 }

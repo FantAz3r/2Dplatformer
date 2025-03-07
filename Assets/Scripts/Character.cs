@@ -19,6 +19,7 @@ public class Character : MonoBehaviour
     private GroundDetecter _groundDetecter;
     private Health _health;
     private Indicators _indicators;
+    private PlayerAttack _playerAttack;
 
 
     private void Awake()
@@ -31,6 +32,7 @@ public class Character : MonoBehaviour
         _groundDetecter = GetComponent<GroundDetecter>();
         _health = GetComponent<Health>();
         _indicators = GetComponent<Indicators>();
+        _playerAttack = GetComponent<PlayerAttack>();
     }
 
     private void OnEnable()
@@ -39,11 +41,14 @@ public class Character : MonoBehaviour
         _inputService.MovedLeft += Move;
         _inputService.MovedRight += Move;
         _health.IsDamageTaken += UpdateHealthIndicator;
+        _health.AmountChange += UpdateHealthIndicator;
+        _inputService.MouseButtonPushed += Attack;
     }
 
     private void Update()
     {
         _animationUpdater.SetGroundedTrigger(_groundDetecter.IsGrounded());
+        RotateCharacterToMouse();
     }
 
     private void OnDisable()
@@ -52,6 +57,8 @@ public class Character : MonoBehaviour
         _inputService.MovedLeft -= Move;
         _inputService.MovedRight -= Move;
         _health.IsDamageTaken -= UpdateHealthIndicator;
+        _health.AmountChange -= UpdateHealthIndicator;
+        _inputService.MouseButtonPushed += Attack;
     }
 
     private void Move(float direction)
@@ -72,5 +79,25 @@ public class Character : MonoBehaviour
     private void UpdateHealthIndicator(float currentHealth)
     {
         _indicators.ViewIndicator(currentHealth);
+    }
+
+    private void Attack(Vector2 mousePosition)
+    {
+        _playerAttack.Attack(mousePosition);
+    }
+
+    private void RotateCharacterToMouse()
+    {
+        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 direction = mousePosition - (Vector2)transform.position;
+
+        if (direction.x < 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1); 
+        }
+        else
+        {
+            transform.localScale = new Vector3(1, 1, 1); 
+        }
     }
 }

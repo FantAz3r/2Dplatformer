@@ -4,11 +4,8 @@ public class Attacker : MonoBehaviour
 {
     [SerializeField] private int _damage;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void Attack(Health target)
     {
-        if (collision.collider.TryGetComponent(out Health target))
-        {
-            target.TakeDamage(_damage);
-        }
+        target.TakeDamage(_damage);
     }
 }

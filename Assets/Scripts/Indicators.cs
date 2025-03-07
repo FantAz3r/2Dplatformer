@@ -6,11 +6,9 @@ public class Indicators : MonoBehaviour
 
     private Health _health;
     private float _indicatorWidth;
-    private float _startSpritePositionX;
 
     private void Awake()
     {
-        _startSpritePositionX = _healthSprite.position.x;
         _indicatorWidth = _healthSprite.sizeDelta.x;
         _health = GetComponent<Health>();
     }

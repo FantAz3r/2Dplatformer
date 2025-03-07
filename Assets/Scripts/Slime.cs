@@ -20,6 +20,7 @@ public class Slime : MonoBehaviour
     private Attacker _attacker;
     private Health _health;
     private Patruller _patruller;
+    private Pusher _pusher;
 
     private void Awake()
     {
@@ -31,6 +32,7 @@ public class Slime : MonoBehaviour
         _playerFounder = GetComponent<PlayerFounder>();
         _health = GetComponent<Health>();
         _patruller = GetComponent<Patruller>();
+        _pusher = GetComponent<Pusher>();
     }
 
     private void Update()
@@ -60,6 +62,11 @@ public class Slime : MonoBehaviour
 
     private void Move(float direction)
     {
+        if (direction != 0)
+        {
+            transform.localScale = new Vector2(Mathf.Sign(direction), 1);
+        }
+
         _mover.Move(direction, _rigidbody2D);
     }
 
@@ -69,5 +76,14 @@ public class Slime : MonoBehaviour
         float direction = _playerFounder.GetTarget().position.x - transform.position.x;
         Jump();
         Move(direction);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.TryGetComponent(out Health target))
+        {
+            _attacker.Attack(target);
+            _pusher.PushBack(target);
+        }
     }
 }

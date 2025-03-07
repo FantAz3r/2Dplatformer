@@ -9,11 +9,26 @@ public class Health : MonoBehaviour
     public float MaxHealth => _maxHealth;
 
     public event Action<float> IsDamageTaken;
+    public event Action<float> AmountChange;
     public event Action Died;
 
     private void Awake()
     {
         _currentHealth = _maxHealth;
+    }
+
+    public void Heal(float healAmount)
+    {
+        if (_currentHealth + healAmount > _maxHealth)
+        {
+            _currentHealth = _maxHealth;
+        }
+        else
+        {
+            _currentHealth += healAmount;
+        }
+
+        AmountChange?.Invoke(_currentHealth);
     }
 
     public void TakeDamage(int damage)

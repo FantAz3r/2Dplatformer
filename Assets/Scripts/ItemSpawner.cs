@@ -1,11 +1,11 @@
 using UnityEngine;
 
-public class CoinSpawner : MonoBehaviour
+public class ItemSpawner : MonoBehaviour
 {
-    [SerializeField] private int _coinsAmount;
+    [SerializeField] private int _itemAmount;
     [SerializeField] private float _ditanceToGround;
     [SerializeField] private LayerMask _groundLayer;
-    [SerializeField] private Coin _coinPrefab;
+    [SerializeField] private GameObject _prefab;
 
     private int _positionX;
     private int _positionY;
@@ -17,13 +17,13 @@ public class CoinSpawner : MonoBehaviour
 
     private void Create()
     {
-        for (int i = 0; i < _coinsAmount; i++)
+        for (int i = 0; i < _itemAmount; i++)
         {
             Vector2 spawnPosition = GetRandomSpawnPosition();
 
             if (spawnPosition != Vector2.zero)
             {
-                Instantiate(_coinPrefab, spawnPosition, Quaternion.identity);
+                Instantiate(_prefab, spawnPosition, Quaternion.identity);
             }
         }
     }
