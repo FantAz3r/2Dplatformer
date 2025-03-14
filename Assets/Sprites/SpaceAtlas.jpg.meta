@@ -1,0 +1,4383 @@
+fileFormatVersion: 2
+guid: 675175a6d3e9a754b850b0810c4be610
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2353063121577500724
+    second: SpaceAtlas_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpaceAtlas_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1180
+        width: 1890
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26.5, y: 4}
+        - {x: 31.5, y: 4}
+        - {x: 31.5, y: 19}
+        - {x: 27.5, y: 19}
+        - {x: 27.5, y: 24}
+        - {x: 22.5, y: 24}
+        - {x: 22.5, y: 29}
+        - {x: 7.2855225, y: 29}
+        - {x: 6.5, y: 25}
+        - {x: 1.5, y: 24}
+        - {x: 0.5, y: 19}
+        - {x: -1.5, y: 19}
+        - {x: -2.5, y: 24}
+        - {x: -6.5, y: 24}
+        - {x: -7.5, y: 29}
+        - {x: -21.5, y: 29}
+        - {x: -22.5, y: 24}
+        - {x: -27.5, y: 24}
+        - {x: -27.5, y: 20}
+        - {x: -31.5, y: 19}
+        - {x: -31.5, y: 4}
+        - {x: -27.5, y: 4}
+        - {x: -27.5, y: -4}
+        - {x: -0.5, y: -29}
+        - {x: 26.5, y: -5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b0c07211123e4e4ba4829658d7bbd0f
+      internalID: -631713219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 840
+        width: 311
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13d65e9ba63024948a79bea59b16ebf9
+      internalID: 547701918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_2
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 862
+        width: 148
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e14bf9f61c88642bf45529268e7f39
+      internalID: 173625549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_3
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 883
+        width: 205
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f99d487383169ba4aa3932ed8cc4236f
+      internalID: -337200503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_4
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 1119
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8570302c2f4b7b0479fcf3b141277744
+      internalID: 188378885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_5
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 1112
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53775f3826a85574b9b47923aa73ce3a
+      internalID: 1724502934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_6
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 1003
+        width: 130
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d74703bf88267294e8a219d92f506602
+      internalID: 349217413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_7
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 1106
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 096a7da5b5f9b5c4f820fe8ad8588a78
+      internalID: -743231987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_8
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 1094
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9caff986fe8971c4b9a0d6415db516af
+      internalID: -328745952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_9
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 1119
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84282df1d360fa34da21ab4b4f2d2547
+      internalID: 97659256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_10
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 1048
+        width: 81
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ef75c5ffc807b41a9f8e4d81f946b0
+      internalID: 1044329049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_11
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 1047
+        width: 80
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed114bd5b40869c41bd5e63259f743b2
+      internalID: -2144379859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_12
+      rect:
+        serializedVersion: 2
+        x: 1758
+        y: 1048
+        width: 80
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e317911b71d23e43836040b27d8e4d9
+      internalID: -294410018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_13
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 1088
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30ec980562c2a5241a5055af51cc6f4b
+      internalID: 1629134249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_14
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 1100
+        width: 19
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a0eae818910965449b3703b0758b5cc
+      internalID: -1489625710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_15
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1100
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9524f6c03d2abd342bfbce6dc2865f8f
+      internalID: -811025072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_16
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 1100
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12d4ff497b7965148a9b10fdae9ce4f5
+      internalID: 1595472088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_17
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 974
+        width: 111
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53befa12c914cb44c8a99804bc09030f
+      internalID: -763437238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_18
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 1106
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 164005c9be946a248a431c430a73845b
+      internalID: 739725198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_19
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 877
+        width: 147
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aba67dc60fdc9544a4183b87060b1e5
+      internalID: -1600422917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_20
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 1082
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9632082364998cb41951da8764914397
+      internalID: -947817112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_21
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 1064
+        width: 50
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd935b78d1d607849b6223ec9985fc03
+      internalID: -1641080098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_22
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 1058
+        width: 62
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf67a5aeebf76c4f89de1f54824f4d8
+      internalID: 1874642773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_23
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 1082
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ad9cd07d08c17c4784d47c5e39e04d2
+      internalID: -1283890626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_24
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 1088
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e444856eadd2f4787506bca50c4c4d
+      internalID: 705105318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_25
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 1070
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caaf616b47c284748ba31b34020b56c6
+      internalID: 1763629936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_26
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1082
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff4f9d1c0f5cc0347b9fa0461d9dc540
+      internalID: -606717311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_27
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 1057
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2230a83a0aef4f44950507c11a0886c
+      internalID: -1179127501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_28
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 1076
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 421ffe18cd389e04ca49daabaaef189b
+      internalID: 1249650782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_29
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 1034
+        width: 43
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2659d7da3dd04b443a2412a4f7172e4d
+      internalID: -537183039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_30
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 986
+        width: 92
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07dadba2c5fa85c42b60e3a3d9e54217
+      internalID: -1721630101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_31
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 1016
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dba2003a6faa2b478952983c796beff
+      internalID: -703788572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_32
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 1052
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27bff1ba0362dc74cb3e4792680b6494
+      internalID: 285148208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_33
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 1046
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de8eac0af838ff449e2483fd7e74f0d
+      internalID: -1384428599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_34
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 1028
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a1cc622e6810d45ae2459452c67a15
+      internalID: 1875079985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_35
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 944
+        width: 126
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b20ad9dba37694f9c482f2d2a25210
+      internalID: -2565328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_36
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 986
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 170f9448ab13817419d8a2bc7cd4b5d5
+      internalID: 583194245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_37
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 968
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f29dce372ef80246bfc88950f93567c
+      internalID: -966901139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_38
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 992
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88c88ec8ede2774bb5d88c5be025f5c
+      internalID: -35979208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_39
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 1010
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 209eaef3b01fd7e4f98d97b2f3db9a01
+      internalID: 674269925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_40
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 939
+        width: 68
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe0d8c3fc77ad4b4e8f534d059385ec3
+      internalID: -1119636820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_41
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 877
+        width: 117
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51ba803756be5d64c93c4464b77a8e07
+      internalID: -433582365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_42
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 938
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25a0802fedf7a9a44bc0e3fe4c269b2e
+      internalID: 936795220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_43
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 962
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243680f7238606e4e9fcc08ace0cb1bd
+      internalID: 1837749298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_44
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 932
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f84b34d7604bfa546b11ef77d800fb52
+      internalID: 2036018374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_45
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 961
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8966997ca4ed3e44809f7f7b51256df
+      internalID: 1614949567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_46
+      rect:
+        serializedVersion: 2
+        x: 1513
+        y: 940
+        width: 69
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f231ebd57ab02864e8dedec4ec749a36
+      internalID: 1596073084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_47
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 940
+        width: 68
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673e9a2722284ef4080d5cbc3576c12e
+      internalID: -376609297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_48
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 926
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 748025bce5bb6bf4a8205662c2a296b1
+      internalID: 1543176099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_49
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 908
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450277f977634234ea4b22efa929e1ae
+      internalID: 1995164543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_50
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 915
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b00d8a047a7cb74cb06e54e6c28fb09
+      internalID: -293592845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_51
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 932
+        width: 19
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae8c4c72d409404c85ab411d41d1447
+      internalID: 884472129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_52
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 932
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d15c935647c3846a6c2fe94fa4af6c
+      internalID: -1079453333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_53
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 932
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8bdccd67deb954198029bb4873dbe2
+      internalID: -729602748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_54
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 888
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91389b57e619e224e873a238dcb22aa5
+      internalID: -1533003680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_55
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 908
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e96680da1f9172a4f9bd0e1ef34dc247
+      internalID: 46879675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_56
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 914
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7494c83953a1c3e4895c58138abbd3ff
+      internalID: -820891682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_57
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 914
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e491c1500e170db4f847f684f2852170
+      internalID: -100680974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_58
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 855
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ad25cdc1e4f8b24083ff4537c48ee90
+      internalID: 1914696506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_59
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 869
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca3c906a78214c48ad941396899025c
+      internalID: -1110320612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_60
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 610
+        width: 20
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d910a4032de9934dbe16cb4bc412f84
+      internalID: -1985117463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_61
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 852
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928de46cd9622134ca4defd2fe7dfa19
+      internalID: -724918501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_62
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 839
+        width: 7
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ac35d72e5e823e4c87113c14118e712
+      internalID: 72191038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_63
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 852
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 899e0fe968e46044588b38e7f6a7cfd5
+      internalID: 904374440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_64
+      rect:
+        serializedVersion: 2
+        x: 1733
+        y: 610
+        width: 32
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1cf30e99a114d41850836f236349ce
+      internalID: -1815574580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_65
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 875
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30c3da4a48e6f9642bce13f555db1161
+      internalID: 1231394468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_66
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 864
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e47f5ecc71142409743cf3e32770de
+      internalID: 34495408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_67
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 857
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f9a77ce49a7d6447a4e70d8cb9ad475
+      internalID: 614358679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_68
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 734
+        width: 177
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca97c93232f903a46ae844f06be1e61c
+      internalID: -1964178297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_69
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 864
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c882fe601b802c43a46e85e29de3b05
+      internalID: -310206546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_70
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 845
+        width: 8
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c19937f5a99934fa69da3e24b2b12b
+      internalID: 310925385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_71
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 837
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f402f08e1ec70546a4cf58c3e1e6e75
+      internalID: -1224752213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_72
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 811
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1e3cad35dfdbc47a6702b67c2981c9
+      internalID: -1126831821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_73
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 845
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c015521b91a8a4a912e791efe1cd06
+      internalID: 268253687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_74
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 834
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec25c6993b81dc34990758bb5d8b5285
+      internalID: 437457901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_75
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 539
+        width: 165
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78bbcc39b48522546a2eb14929cb6ff9
+      internalID: -1954182036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_76
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 827
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82faf97ba482c70469a172a3c70ff3c2
+      internalID: 955939104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_77
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 804
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df9f60ae244c7fd4e961d8ad7573f6f5
+      internalID: -418505830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_78
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 809
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3511628b233ab93418492e44af204752
+      internalID: -544584902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_79
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 821
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37f08aaa121f7ad488d89f2a7e011c3a
+      internalID: 1541038361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_80
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 557
+        width: 239
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d053e4f14919c439387e13c33cf1cc
+      internalID: -532962536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_81
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 552
+        width: 244
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5fa95625b10234bb2c41408f094c8f
+      internalID: 212823962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_82
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 560
+        width: 268
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ba5c95dd82ec84ca8f60f9b35cb52a
+      internalID: -945972229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_83
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 588
+        width: 275
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f398582072e304abd65d1679f432b3
+      internalID: -1385336293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_84
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 779
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f924fcbdaebf6948ba830d0ea07ead1
+      internalID: 1972380269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_85
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 791
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7800135e77bd1041bc76893e2b40c10
+      internalID: 410414358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_86
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 771
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac287f94e2dee848a53c47b6ec5c725
+      internalID: 1237329244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_87
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 782
+        width: 7
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3971b8f297d401549bbd1ff77f348360
+      internalID: 1224726068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_88
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 784
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92663ee7af9f124681270bd42d101be
+      internalID: 1224536367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_89
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 791
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c924692397f9d64099d0270de4efef8
+      internalID: -1852641569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_90
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 779
+        width: 8
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bcbdef2380bab740a21e4b9fd6f8d9b
+      internalID: -349811398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_91
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 761
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53cf6d1b89d2f78468bada760a2c68ad
+      internalID: 601416535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_92
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 767
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 486a84ba408455c4686d1d4aa0d8dd62
+      internalID: 299491316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_93
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 725
+        width: 7
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41c944ba563a70a4d9b67bae70d2045d
+      internalID: -747124681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_94
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 755
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 470bad2c97ac11d40b070a6e3b3413ad
+      internalID: -638137338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_95
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 749
+        width: 8
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7764a2c4eb1002e40a53c5ddefad283d
+      internalID: 1773175331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_96
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 767
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d66678180abfcc4a89ec05ebe24d5d7
+      internalID: -1736681701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_97
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 754
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7a883352b863946bc69bc2126a3b86
+      internalID: -1370394086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_98
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 755
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea1a5d58490bfa44b87a981004d7a0b2
+      internalID: 43498077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_99
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 731
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09f4a8ae2212ed448505998b63a5597
+      internalID: 706677939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_100
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 749
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d80e9a6fb178834c9454a8049f271d9
+      internalID: 900993794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_101
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 733
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03fcde21f2b3384792fff4084297f65
+      internalID: -220673173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_102
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 733
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f42615fae034b4d4fb45b37cd091eb28
+      internalID: -1464580589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_103
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 707
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a3d7794ac63a7a48b9d71dd34eb93ca
+      internalID: 832157649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_104
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 714
+        width: 8
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a22ef790c589e4f821216f3e3b819c
+      internalID: 807596519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_105
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 724
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ebf87d13add4d04eb61c537eaf376bd
+      internalID: 2118801797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_106
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 653
+        width: 8
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 686f85dfd7fc63747a9141e6c5076081
+      internalID: -1893271508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_107
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 721
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9df1cd9a87f254544a318939df15c44a
+      internalID: 290013860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_108
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 704
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a562ed43e4ed264ba06e7fb7c7c14b1
+      internalID: 95941118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_109
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 719
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5efcebf8bef9ae4ba08094391bd2395
+      internalID: -1369943188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_110
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 690
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29f0efd5ee61d84683b1202ff78ac24
+      internalID: -1030920051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_111
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 685
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bfa74649d1d4f844831e8f05d7a59ab
+      internalID: 1722815555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_112
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 683
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14da6167955eab449b9303359717c27c
+      internalID: 1802236896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_113
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 668
+        width: 7
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 270a0225452a65c4d9932300975e2e22
+      internalID: -746366170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_114
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 659
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b4a072a73d05994e89d468b832deee5
+      internalID: -50178440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_115
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 676
+        width: 8
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8899a4d27d2bb3c458db6aca3bbe75db
+      internalID: -1468584691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_116
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 688
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b84599f98c10be48a1c5e62df76b00e
+      internalID: 2031786046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_117
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 570
+        width: 140
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e8b31da8ba0b4348835a8a61e1c37d7
+      internalID: 180301771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_118
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 658
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cba61b811dc669488f34fd42456cafc
+      internalID: -43307949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_119
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 650
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e3d6bc3333d8a4497ae07bccf6ad9a
+      internalID: 59400268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_120
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 646
+        width: 8
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4482ae49d351e04478ec6affcee73ca9
+      internalID: 1721966054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_121
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 658
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e190c712e74a6b04d842385a75a86cc2
+      internalID: 1311906246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_122
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 628
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d54c3e28bdd8da5469f71f9f33b614d1
+      internalID: 1062519503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_123
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 646
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e9a4f4e5f406da45814c6fcc2d84d3c
+      internalID: -1839456971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_124
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 610
+        width: 7
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f757d285132d04cb064d741b06d300
+      internalID: 780932119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_125
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 628
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8405410916ebeb249b967249b47d9852
+      internalID: 2036944087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_126
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 603
+        width: 8
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b490e0b6af208468fe18db63078738
+      internalID: 1654008649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_127
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 610
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ebf38e5a380cac48957013e9cb79337
+      internalID: 1678277942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_128
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 609
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 858f29ae371681d4fb9a7f96822648c0
+      internalID: -1450051112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_129
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 610
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece5c23d864cfce40b682211818ce95a
+      internalID: -203201370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_130
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 610
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33cdb25342e6ff8478114167b9ad7676
+      internalID: -626899253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_131
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 610
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2bad71ca5237de42a1f2d1c43f83c61
+      internalID: -1436513051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_132
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 577
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038ed604f8bbad54aa28366f92062781
+      internalID: -76191060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_133
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 576
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 027372d70feab8f41bdf0a5657493e42
+      internalID: 389418200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_134
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 571
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 316fc3ac98dccba439e78d32e9f8a24b
+      internalID: -331713041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_135
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 442
+        width: 146
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d3b05f87059c8d4190d225d03255cd9
+      internalID: 1969584584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_136
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 445
+        width: 146
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cfdbfd75b7b70f4fb4f7e57278aa289
+      internalID: -2015885139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_137
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 563
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e303b11edf83faf45828fde98b253339
+      internalID: 1082540010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_138
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 484
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d88f405d92b3af4aac55eb8ff0e288e
+      internalID: 101728661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_139
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 496
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b472bde165ca5468c2e570769556e9
+      internalID: 1270548444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_140
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 490
+        width: 20
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46172bd897cba8f47aea59b91e0116ac
+      internalID: -1661430729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_141
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 490
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 201096af2cd3d584484d84a71c624640
+      internalID: 1799913869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_142
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 490
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f6a6a8f45ce3d4d8396c45c3b2fffa
+      internalID: 1295012275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_143
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 484
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b2c1e5e4c39a645b4e055bd0b12e1c
+      internalID: 2133469366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_144
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 502
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b04fa5744ba5b6643b9e77b0d84cffe9
+      internalID: 1439054417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_145
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 490
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc30d25d70d668040923fee90724a5f3
+      internalID: 1290391998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_146
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 445
+        width: 55
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba5f8bf60ab64d43b2d0ee6be1d0585
+      internalID: 1838098690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_147
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 445
+        width: 98
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ecc5dd41e772c444a3a2dc0748942a9
+      internalID: -217724987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_148
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 445
+        width: 103
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7b1b50431e2341479ec74dc86346db0
+      internalID: 960541722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_149
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 447
+        width: 317
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 794645929d9eaf84ab4caa341a48d78a
+      internalID: -522213743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_150
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 459
+        width: 44
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d3c705c75b798b4ba07b5ec30464265
+      internalID: 250102899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_151
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 487
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd086351708a62439cc7a2b8209c111
+      internalID: -1828581810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_152
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 445
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d606028533f7104599c122556b3877a
+      internalID: 78059460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_153
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 457
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be56a2a5c3ca1644a849922ca1dc8636
+      internalID: 2067631747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_154
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 463
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99a5d0e3e94eda498c0a7becf7b2917
+      internalID: -938215656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_155
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 451
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6267c0dfb5061548860e90dd5081efe
+      internalID: 1661387081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_156
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 463
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd85e4e07b024c4db9acabf3a141c89
+      internalID: -1456841850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_157
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 411
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56af5e84e8377a849833181479d09776
+      internalID: 638731253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_158
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 411
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8cf0e01e70039b42ad6ca4f88152845
+      internalID: -1930322789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_159
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 351
+        width: 81
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6bb94c6191a4214cab29650bd366930
+      internalID: -448104011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_160
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 361
+        width: 80
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a5d32c03de9da547848e94810b0bab3
+      internalID: 1698020615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_161
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 363
+        width: 80
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e253244884d824a95b629ff68c8243
+      internalID: 1369741194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_162
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 439
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954f9a764f4acaf4bb67f385e1bf1a28
+      internalID: -1430704816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_163
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 385
+        width: 311
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c39b74b1879459429d4207f3229f14f
+      internalID: 742193565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_164
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 351
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2527e2f925335594aaadc37822957b27
+      internalID: -1690006744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_165
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 400
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7e7fbfdad6f1d499670ee553fe9f13
+      internalID: -125155227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_166
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 406
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1ec2c7a1b16d840828f1a135fe5316
+      internalID: 498987502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_167
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 278
+        width: 140
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b446f480a9f257a459532bd359ee7776
+      internalID: 1410085217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_168
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 279
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a18613e0de468429ce490330abdca0
+      internalID: 59615518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_169
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 278
+        width: 140
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf57de9f16794e46bce18e5b0ffdb92
+      internalID: -1254694078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_170
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 278
+        width: 140
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5834a0398af59747842d200e505ff36
+      internalID: -711381291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_171
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 356
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a72943e574c6fd14da0378c986fa57d6
+      internalID: -1144629692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_172
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 376
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee69f416ab66a743887bb2d897660be
+      internalID: -1986669519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_173
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 358
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b9497119658874ab5fcf42770ae85f
+      internalID: 246310034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_174
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 376
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a839c223c433a4999e3d361b5cceb8
+      internalID: -1722771474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_175
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 376
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c57640c25ddf2f40b1828c26173068e
+      internalID: -2116966885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_176
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 358
+        width: 80
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c56564197bbbf0e409d138925a73a23f
+      internalID: 1486116902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_177
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 376
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d10d19ef02811d14c9aacb0886a0f37e
+      internalID: -1879714131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_178
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 322
+        width: 317
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 810fc68e83d10314196c44c252689b55
+      internalID: -534515464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_179
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 346
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e0117afaa0dd6047aff1d2d078e5377
+      internalID: -381933509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_180
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 346
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c00a3459c5c484a9401a842afb760b
+      internalID: -176443469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_181
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 260
+        width: 317
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51383aaaa5b36444f8c36b643e347e52
+      internalID: 64001699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_182
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 260
+        width: 78
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e81078de9bc5340aac440cb6209c26
+      internalID: -1037348798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_183
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 260
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058848b38b61c684ab573bdf8e553a78
+      internalID: 381294946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_184
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 260
+        width: 75
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af3d98eeadfab2c49acc4b1dbecef5b7
+      internalID: -406475258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_185
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 260
+        width: 85
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3803928f44f815348a2f6e08f79c1d7c
+      internalID: -1684733284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_186
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 272
+        width: 68
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c9c7ae75a6eaca4aba7180028bd2695
+      internalID: -1664850846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_187
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 302
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eb8e7d985db9274e954d6db8429b511
+      internalID: -809023583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_188
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 278
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be35e9459a3592b458dec57c018959b2
+      internalID: -1704716897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_189
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 278
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc73b1f33837ad489885cec5d283959
+      internalID: 670822945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceAtlas_190
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1890
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d9d88049fddfe4fbb07a120a109c86
+      internalID: 1278434952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1f304675ad89cd84aad118a3d6940e39
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SpaceAtlas_0: -631713219
+      SpaceAtlas_1: 547701918
+      SpaceAtlas_10: 1044329049
+      SpaceAtlas_100: 900993794
+      SpaceAtlas_101: -220673173
+      SpaceAtlas_102: -1464580589
+      SpaceAtlas_103: 832157649
+      SpaceAtlas_104: 807596519
+      SpaceAtlas_105: 2118801797
+      SpaceAtlas_106: -1893271508
+      SpaceAtlas_107: 290013860
+      SpaceAtlas_108: 95941118
+      SpaceAtlas_109: -1369943188
+      SpaceAtlas_11: -2144379859
+      SpaceAtlas_110: -1030920051
+      SpaceAtlas_111: 1722815555
+      SpaceAtlas_112: 1802236896
+      SpaceAtlas_113: -746366170
+      SpaceAtlas_114: -50178440
+      SpaceAtlas_115: -1468584691
+      SpaceAtlas_116: 2031786046
+      SpaceAtlas_117: 180301771
+      SpaceAtlas_118: -43307949
+      SpaceAtlas_119: 59400268
+      SpaceAtlas_12: -294410018
+      SpaceAtlas_120: 1721966054
+      SpaceAtlas_121: 1311906246
+      SpaceAtlas_122: 1062519503
+      SpaceAtlas_123: -1839456971
+      SpaceAtlas_124: 780932119
+      SpaceAtlas_125: 2036944087
+      SpaceAtlas_126: 1654008649
+      SpaceAtlas_127: 1678277942
+      SpaceAtlas_128: -1450051112
+      SpaceAtlas_129: -203201370
+      SpaceAtlas_13: 1629134249
+      SpaceAtlas_130: -626899253
+      SpaceAtlas_131: -1436513051
+      SpaceAtlas_132: -76191060
+      SpaceAtlas_133: 389418200
+      SpaceAtlas_134: -331713041
+      SpaceAtlas_135: 1969584584
+      SpaceAtlas_136: -2015885139
+      SpaceAtlas_137: 1082540010
+      SpaceAtlas_138: 101728661
+      SpaceAtlas_139: 1270548444
+      SpaceAtlas_14: -1489625710
+      SpaceAtlas_140: -1661430729
+      SpaceAtlas_141: 1799913869
+      SpaceAtlas_142: 1295012275
+      SpaceAtlas_143: 2133469366
+      SpaceAtlas_144: 1439054417
+      SpaceAtlas_145: 1290391998
+      SpaceAtlas_146: 1838098690
+      SpaceAtlas_147: -217724987
+      SpaceAtlas_148: 960541722
+      SpaceAtlas_149: -522213743
+      SpaceAtlas_15: -811025072
+      SpaceAtlas_150: 250102899
+      SpaceAtlas_151: -1828581810
+      SpaceAtlas_152: 78059460
+      SpaceAtlas_153: 2067631747
+      SpaceAtlas_154: -938215656
+      SpaceAtlas_155: 1661387081
+      SpaceAtlas_156: -1456841850
+      SpaceAtlas_157: 638731253
+      SpaceAtlas_158: -1930322789
+      SpaceAtlas_159: -448104011
+      SpaceAtlas_16: 1595472088
+      SpaceAtlas_160: 1698020615
+      SpaceAtlas_161: 1369741194
+      SpaceAtlas_162: -1430704816
+      SpaceAtlas_163: 742193565
+      SpaceAtlas_164: -1690006744
+      SpaceAtlas_165: -125155227
+      SpaceAtlas_166: 498987502
+      SpaceAtlas_167: 1410085217
+      SpaceAtlas_168: 59615518
+      SpaceAtlas_169: -1254694078
+      SpaceAtlas_17: -763437238
+      SpaceAtlas_170: -711381291
+      SpaceAtlas_171: -1144629692
+      SpaceAtlas_172: -1986669519
+      SpaceAtlas_173: 246310034
+      SpaceAtlas_174: -1722771474
+      SpaceAtlas_175: -2116966885
+      SpaceAtlas_176: 1486116902
+      SpaceAtlas_177: -1879714131
+      SpaceAtlas_178: -534515464
+      SpaceAtlas_179: -381933509
+      SpaceAtlas_18: 739725198
+      SpaceAtlas_180: -176443469
+      SpaceAtlas_181: 64001699
+      SpaceAtlas_182: -1037348798
+      SpaceAtlas_183: 381294946
+      SpaceAtlas_184: -406475258
+      SpaceAtlas_185: -1684733284
+      SpaceAtlas_186: -1664850846
+      SpaceAtlas_187: -809023583
+      SpaceAtlas_188: -1704716897
+      SpaceAtlas_189: 670822945
+      SpaceAtlas_19: -1600422917
+      SpaceAtlas_190: 1278434952
+      SpaceAtlas_2: 173625549
+      SpaceAtlas_20: -947817112
+      SpaceAtlas_21: -1641080098
+      SpaceAtlas_22: 1874642773
+      SpaceAtlas_23: -1283890626
+      SpaceAtlas_24: 705105318
+      SpaceAtlas_25: 1763629936
+      SpaceAtlas_26: -606717311
+      SpaceAtlas_27: -1179127501
+      SpaceAtlas_28: 1249650782
+      SpaceAtlas_29: -537183039
+      SpaceAtlas_3: -337200503
+      SpaceAtlas_30: -1721630101
+      SpaceAtlas_31: -703788572
+      SpaceAtlas_32: 285148208
+      SpaceAtlas_33: -1384428599
+      SpaceAtlas_34: 1875079985
+      SpaceAtlas_35: -2565328
+      SpaceAtlas_36: 583194245
+      SpaceAtlas_37: -966901139
+      SpaceAtlas_38: -35979208
+      SpaceAtlas_39: 674269925
+      SpaceAtlas_4: 188378885
+      SpaceAtlas_40: -1119636820
+      SpaceAtlas_41: -433582365
+      SpaceAtlas_42: 936795220
+      SpaceAtlas_43: 1837749298
+      SpaceAtlas_44: 2036018374
+      SpaceAtlas_45: 1614949567
+      SpaceAtlas_46: 1596073084
+      SpaceAtlas_47: -376609297
+      SpaceAtlas_48: 1543176099
+      SpaceAtlas_49: 1995164543
+      SpaceAtlas_5: 1724502934
+      SpaceAtlas_50: -293592845
+      SpaceAtlas_51: 884472129
+      SpaceAtlas_52: -1079453333
+      SpaceAtlas_53: -729602748
+      SpaceAtlas_54: -1533003680
+      SpaceAtlas_55: 46879675
+      SpaceAtlas_56: -820891682
+      SpaceAtlas_57: -100680974
+      SpaceAtlas_58: 1914696506
+      SpaceAtlas_59: -1110320612
+      SpaceAtlas_6: 349217413
+      SpaceAtlas_60: -1985117463
+      SpaceAtlas_61: -724918501
+      SpaceAtlas_62: 72191038
+      SpaceAtlas_63: 904374440
+      SpaceAtlas_64: -1815574580
+      SpaceAtlas_65: 1231394468
+      SpaceAtlas_66: 34495408
+      SpaceAtlas_67: 614358679
+      SpaceAtlas_68: -1964178297
+      SpaceAtlas_69: -310206546
+      SpaceAtlas_7: -743231987
+      SpaceAtlas_70: 310925385
+      SpaceAtlas_71: -1224752213
+      SpaceAtlas_72: -1126831821
+      SpaceAtlas_73: 268253687
+      SpaceAtlas_74: 437457901
+      SpaceAtlas_75: -1954182036
+      SpaceAtlas_76: 955939104
+      SpaceAtlas_77: -418505830
+      SpaceAtlas_78: -544584902
+      SpaceAtlas_79: 1541038361
+      SpaceAtlas_8: -328745952
+      SpaceAtlas_80: -532962536
+      SpaceAtlas_81: 212823962
+      SpaceAtlas_82: -945972229
+      SpaceAtlas_83: -1385336293
+      SpaceAtlas_84: 1972380269
+      SpaceAtlas_85: 410414358
+      SpaceAtlas_86: 1237329244
+      SpaceAtlas_87: 1224726068
+      SpaceAtlas_88: 1224536367
+      SpaceAtlas_89: -1852641569
+      SpaceAtlas_9: 97659256
+      SpaceAtlas_90: -349811398
+      SpaceAtlas_91: 601416535
+      SpaceAtlas_92: 299491316
+      SpaceAtlas_93: -747124681
+      SpaceAtlas_94: -638137338
+      SpaceAtlas_95: 1773175331
+      SpaceAtlas_96: -1736681701
+      SpaceAtlas_97: -1370394086
+      SpaceAtlas_98: 43498077
+      SpaceAtlas_99: 706677939
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

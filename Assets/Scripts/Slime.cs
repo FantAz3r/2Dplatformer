@@ -21,6 +21,7 @@ public class Slime : MonoBehaviour
     private Health _health;
     private Patruller _patruller;
     private Pusher _pusher;
+    private EnemyHealthViewer _enemyHealthViewer;
 
     private void Awake()
     {
@@ -33,10 +34,17 @@ public class Slime : MonoBehaviour
         _health = GetComponent<Health>();
         _patruller = GetComponent<Patruller>();
         _pusher = GetComponent<Pusher>();
+        _enemyHealthViewer = GetComponent<EnemyHealthViewer>();
+    }
+
+    private void OnEnable()
+    {
+        _health.IsDamageTaken += UpdateHealthIndicator;
     }
 
     private void Update()
     {
+
         if (_playerFounder.GetTarget() != null)
         {
             _patruller.StopPatrol();
@@ -50,6 +58,11 @@ public class Slime : MonoBehaviour
                 _patruller.StartPatrol();
             }
         }
+    }
+
+    private void OnDisable()
+    {
+        _health.IsDamageTaken -= UpdateHealthIndicator;
     }
 
     private void Jump()
@@ -76,6 +89,11 @@ public class Slime : MonoBehaviour
         float direction = _playerFounder.GetTarget().position.x - transform.position.x;
         Jump();
         Move(direction);
+    }
+
+    private void UpdateHealthIndicator(float currentHealth)
+    {
+        _enemyHealthViewer.ViewIndicator(currentHealth);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

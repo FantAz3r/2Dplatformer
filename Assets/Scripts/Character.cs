@@ -7,7 +7,7 @@ using UnityEngine;
 [RequireComponent(typeof(Mover))]
 [RequireComponent(typeof(GroundDetecter))]
 [RequireComponent(typeof(Health))]
-[RequireComponent(typeof(Indicators))]
+[RequireComponent(typeof(PlayerIndicators))]
 
 public class Character : MonoBehaviour
 {
@@ -18,7 +18,7 @@ public class Character : MonoBehaviour
     private Jumper _jumper;
     private GroundDetecter _groundDetecter;
     private Health _health;
-    private Indicators _indicators;
+    private PlayerIndicators _indicators;
     private PlayerAttack _playerAttack;
 
 
@@ -31,7 +31,7 @@ public class Character : MonoBehaviour
         _mover = GetComponent<Mover>();
         _groundDetecter = GetComponent<GroundDetecter>();
         _health = GetComponent<Health>();
-        _indicators = GetComponent<Indicators>();
+        _indicators = GetComponent<PlayerIndicators>();
         _playerAttack = GetComponent<PlayerAttack>();
     }
 
