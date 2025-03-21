@@ -7,7 +7,6 @@ using UnityEngine;
 [RequireComponent(typeof(Mover))]
 [RequireComponent(typeof(GroundDetecter))]
 [RequireComponent(typeof(Health))]
-[RequireComponent(typeof(PlayerIndicators))]
 
 public class Character : MonoBehaviour
 {
@@ -18,7 +17,6 @@ public class Character : MonoBehaviour
     private Jumper _jumper;
     private GroundDetecter _groundDetecter;
     private Health _health;
-    private PlayerIndicators _indicators;
     private PlayerAttack _playerAttack;
 
 
@@ -31,7 +29,6 @@ public class Character : MonoBehaviour
         _mover = GetComponent<Mover>();
         _groundDetecter = GetComponent<GroundDetecter>();
         _health = GetComponent<Health>();
-        _indicators = GetComponent<PlayerIndicators>();
         _playerAttack = GetComponent<PlayerAttack>();
     }
 
@@ -40,8 +37,6 @@ public class Character : MonoBehaviour
         _inputService.Jumped += Jump;
         _inputService.MovedLeft += Move;
         _inputService.MovedRight += Move;
-        _health.IsDamageTaken += UpdateHealthIndicator;
-        _health.AmountChange += UpdateHealthIndicator;
         _inputService.MouseButtonPushed += Attack;
     }
 
@@ -56,8 +51,6 @@ public class Character : MonoBehaviour
         _inputService.Jumped -= Jump;
         _inputService.MovedLeft -= Move;
         _inputService.MovedRight -= Move;
-        _health.IsDamageTaken -= UpdateHealthIndicator;
-        _health.AmountChange -= UpdateHealthIndicator;
         _inputService.MouseButtonPushed += Attack;
     }
 
@@ -74,11 +67,6 @@ public class Character : MonoBehaviour
             _animationUpdater.PlayJump();
             _jumper.Jump(_rigidbody);
         }
-    }
-
-    private void UpdateHealthIndicator(float currentHealth)
-    {
-        _indicators.ViewIndicator(currentHealth);
     }
 
     private void Attack(Vector2 mousePosition)
