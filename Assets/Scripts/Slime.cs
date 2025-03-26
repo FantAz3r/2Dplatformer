@@ -8,6 +8,7 @@ using UnityEngine;
 [RequireComponent(typeof(GroundDetecter))]
 [RequireComponent(typeof(Health))]
 [RequireComponent(typeof(Patruller))]
+[RequireComponent(typeof(Fliper))]
 
 public class Slime : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class Slime : MonoBehaviour
     private Health _health;
     private Patruller _patruller;
     private Pusher _pusher;
+    private Fliper _fliper;
 
     private void Awake()
     {
@@ -33,11 +35,16 @@ public class Slime : MonoBehaviour
         _health = GetComponent<Health>();
         _patruller = GetComponent<Patruller>();
         _pusher = GetComponent<Pusher>();
+        _fliper = GetComponent<Fliper>();
+    }
+
+    private void OnEnable()
+    {
+        _groundDetecter.Grounded += Jump; 
     }
 
     private void Update()
     {
-
         if (_playerFounder.GetTarget() != null)
         {
             _patruller.StopPatrol();
@@ -53,9 +60,14 @@ public class Slime : MonoBehaviour
         }
     }
 
+    private void OnDisable()
+    {
+        _groundDetecter.Grounded -= Jump;
+    }
+
     private void Jump()
     {
-        if (_groundDetecter.IsGrounded() == true)
+        if(_groundDetecter.IsGrounded == true)
         {
             _jumper.Jump(_rigidbody2D);
         }
@@ -63,11 +75,7 @@ public class Slime : MonoBehaviour
 
     private void Move(float direction)
     {
-        if (direction != 0)
-        {
-            transform.localScale = new Vector2(Mathf.Sign(direction), 1);
-        }
-
+        _fliper.Flip(-direction);
         _mover.Move(direction, _rigidbody2D);
     }
 

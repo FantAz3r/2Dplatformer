@@ -25,7 +25,7 @@ public class AnimationUpdater : MonoBehaviour
         _animator.SetFloat(Speed, Mathf.Abs(velocity));
     }
 
-    public void SetGroundedTrigger(bool isGrounded)
+    public void SetGrounded(bool isGrounded)
     {
         _animator.SetBool(IsGrounded, isGrounded);
     }

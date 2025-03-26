@@ -1,13 +1,33 @@
+using System;
 using UnityEngine;
 
 public class GroundDetecter : MonoBehaviour
 {
-    [SerializeField] private float _groundCheckRadius = 0.1f;
-    [SerializeField] private Transform _groundCheck;
+    [SerializeField] private Collider2D _groundCheck;
     [SerializeField] private LayerMask _groundLayer;
 
-    public bool IsGrounded()
+    private int _counter = 0;
+    public bool IsGrounded => _counter > 0;
+
+    public event Action Grounded; 
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        return Physics2D.OverlapCircle(_groundCheck.position, _groundCheckRadius, _groundLayer);
+        if ( collision.gameObject.layer == _groundLayer)
+        {
+            if(_counter == 0)
+            {
+                Grounded?.Invoke();
+            }
+            _counter++;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.layer == _groundLayer)
+        {
+            _counter--;
+        }
     }
 }

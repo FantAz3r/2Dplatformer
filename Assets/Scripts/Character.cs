@@ -7,6 +7,8 @@ using UnityEngine;
 [RequireComponent(typeof(Mover))]
 [RequireComponent(typeof(GroundDetecter))]
 [RequireComponent(typeof(Health))]
+[RequireComponent(typeof(Fliper))]
+
 
 public class Character : MonoBehaviour
 {
@@ -18,6 +20,7 @@ public class Character : MonoBehaviour
     private GroundDetecter _groundDetecter;
     private Health _health;
     private PlayerAttack _playerAttack;
+    private Fliper _fliper;
 
 
     private void Awake()
@@ -30,6 +33,7 @@ public class Character : MonoBehaviour
         _groundDetecter = GetComponent<GroundDetecter>();
         _health = GetComponent<Health>();
         _playerAttack = GetComponent<PlayerAttack>();
+        _fliper = GetComponent<Fliper>();
     }
 
     private void OnEnable()
@@ -38,12 +42,8 @@ public class Character : MonoBehaviour
         _inputService.MovedLeft += Move;
         _inputService.MovedRight += Move;
         _inputService.MouseButtonPushed += Attack;
-    }
-
-    private void Update()
-    {
-        _animationUpdater.SetGroundedTrigger(_groundDetecter.IsGrounded());
-        RotateCharacterToMouse();
+        _inputService.MouseMoved += RotateCharacterToMouse;
+        _groundDetecter.Grounded += SetGrounded;
     }
 
     private void OnDisable()
@@ -51,7 +51,9 @@ public class Character : MonoBehaviour
         _inputService.Jumped -= Jump;
         _inputService.MovedLeft -= Move;
         _inputService.MovedRight -= Move;
-        _inputService.MouseButtonPushed += Attack;
+        _inputService.MouseButtonPushed -= Attack;
+        _inputService.MouseMoved -= RotateCharacterToMouse;
+        _groundDetecter.Grounded -= SetGrounded;
     }
 
     private void Move(float direction)
@@ -62,7 +64,7 @@ public class Character : MonoBehaviour
 
     private void Jump()
     {
-        if (_groundDetecter.IsGrounded() == true)
+        if (_groundDetecter.IsGrounded)
         {
             _animationUpdater.PlayJump();
             _jumper.Jump(_rigidbody);
@@ -74,18 +76,13 @@ public class Character : MonoBehaviour
         _playerAttack.Attack(mousePosition);
     }
 
-    private void RotateCharacterToMouse()
+    private void RotateCharacterToMouse(float direction)
     {
-        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 direction = mousePosition - (Vector2)transform.position;
+        _fliper.Flip(direction);
+    }
 
-        if (direction.x < 0)
-        {
-            transform.localScale = new Vector3(-1, 1, 1); 
-        }
-        else
-        {
-            transform.localScale = new Vector3(1, 1, 1); 
-        }
+    public void SetGrounded()
+    {
+        _animationUpdater.SetGrounded(true);
     }
 }

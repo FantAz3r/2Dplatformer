@@ -13,6 +13,7 @@ public class InputService : MonoBehaviour
     public event Action<float> MovedRight;
     public event Action<float> MovedLeft;
     public event Action<Vector2> MouseButtonPushed;
+    public event Action<float> MouseMoved;
     public float Direction { get; private set; }
 
     private void Update()
@@ -38,6 +39,12 @@ public class InputService : MonoBehaviour
         {
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             MouseButtonPushed?.Invoke(mousePosition);
+        }
+
+        if (Input.mousePosition != null)
+        {
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            MouseMoved?.Invoke(mousePosition.x);
         }
     }
 }
