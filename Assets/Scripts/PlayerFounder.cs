@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerFounder : MonoBehaviour
@@ -6,11 +7,15 @@ public class PlayerFounder : MonoBehaviour
 
     private Transform _target; 
 
+    public event Action PlayerDetected;
+    public event Action PlayerLost;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.TryGetComponent<Health>(out _))
         {
             _target = collision.transform;
+            PlayerDetected?.Invoke();
         }
     }
 
@@ -19,6 +24,7 @@ public class PlayerFounder : MonoBehaviour
         if (collision.TryGetComponent<Health>(out _))
         {
             _target = null;
+            PlayerLost?.Invoke();   
         }
     }
 

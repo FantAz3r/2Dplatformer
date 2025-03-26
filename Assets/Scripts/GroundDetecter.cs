@@ -13,19 +13,20 @@ public class GroundDetecter : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if ( collision.gameObject.layer == _groundLayer)
+        if (((1 << collision.gameObject.layer) & _groundLayer) != 0)
         {
             if(_counter == 0)
             {
                 Grounded?.Invoke();
             }
+
             _counter++;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == _groundLayer)
+        if (((1 << collision.gameObject.layer) & _groundLayer) != 0)
         {
             _counter--;
         }

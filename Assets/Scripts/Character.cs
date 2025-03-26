@@ -76,8 +76,9 @@ public class Character : MonoBehaviour
         _playerAttack.Attack(mousePosition);
     }
 
-    private void RotateCharacterToMouse(float direction)
+    private void RotateCharacterToMouse(float mousePositionX)
     {
+        float direction = mousePositionX - transform.position.x; 
         _fliper.Flip(direction);
     }
 

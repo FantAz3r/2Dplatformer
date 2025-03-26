@@ -12,79 +12,48 @@ using UnityEngine;
 
 public class Slime : MonoBehaviour
 {
-    private Rigidbody2D _rigidbody2D;
-    private bool _isPatrolling;
-    private Mover _mover;
-    private Jumper _jumper;
-    private GroundDetecter _groundDetecter;
     private PlayerFounder _playerFounder;
     private Attacker _attacker;
-    private Health _health;
     private Patruller _patruller;
     private Pusher _pusher;
-    private Fliper _fliper;
+    private Chaser _chaser;
 
     private void Awake()
     {
         _attacker = GetComponent<Attacker>();
-        _rigidbody2D = GetComponent<Rigidbody2D>();
-        _jumper = GetComponent<Jumper>();
-        _mover = GetComponent<Mover>();
-        _groundDetecter = GetComponent<GroundDetecter>();
         _playerFounder = GetComponent<PlayerFounder>();
-        _health = GetComponent<Health>();
         _patruller = GetComponent<Patruller>();
         _pusher = GetComponent<Pusher>();
-        _fliper = GetComponent<Fliper>();
+        _chaser = GetComponent<Chaser>();
+    }
+
+    private void Start()
+    {
+        _patruller.StartPatrol();
     }
 
     private void OnEnable()
     {
-        _groundDetecter.Grounded += Jump; 
-    }
-
-    private void Update()
-    {
-        if (_playerFounder.GetTarget() != null)
-        {
-            _patruller.StopPatrol();
-            ChasePlayer();
-        }
-        else
-        {
-            if (_isPatrolling == false)
-            {
-                _isPatrolling = true;
-                _patruller.StartPatrol();
-            }
-        }
+        _playerFounder.PlayerDetected += OnPlayerDetected;  
+        _playerFounder.PlayerLost += OnPlayerLost;          
     }
 
     private void OnDisable()
     {
-        _groundDetecter.Grounded -= Jump;
+        _playerFounder.PlayerDetected -= OnPlayerDetected;  
+        _playerFounder.PlayerLost -= OnPlayerLost;          
     }
 
-    private void Jump()
+    private void OnPlayerDetected()
     {
-        if(_groundDetecter.IsGrounded == true)
-        {
-            _jumper.Jump(_rigidbody2D);
-        }
+        _patruller.StopPatrol();
+        _chaser.StartChasing(_playerFounder.GetTarget());
     }
 
-    private void Move(float direction)
+    private void OnPlayerLost()
     {
-        _fliper.Flip(-direction);
-        _mover.Move(direction, _rigidbody2D);
-    }
-
-    private void ChasePlayer()
-    {
-        _isPatrolling = false;
-        float direction = _playerFounder.GetTarget().position.x - transform.position.x;
-        Jump();
-        Move(direction);
+        _patruller.StartPatrol();
+        _chaser.StopChasing();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
