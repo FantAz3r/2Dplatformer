@@ -4,9 +4,9 @@ using UnityEngine;
 public class Patruller : MonoBehaviour
 {
     [SerializeField] private float _patrolDuration = 2f;
+    [SerializeField] private Fliper _fliper;
 
     private Mover _mover;
-    private Fliper _fliper;
     private Rigidbody2D _rigidbody2D;
     private WaitForSeconds _wait;
     private Jumper _jumper;
@@ -16,7 +16,6 @@ public class Patruller : MonoBehaviour
         _mover = GetComponent<Mover>();
         _wait = new WaitForSeconds(_patrolDuration);
         _rigidbody2D = GetComponent<Rigidbody2D>();
-        _fliper = GetComponent<Fliper>();
         _jumper = GetComponent<Jumper>();
     }
 

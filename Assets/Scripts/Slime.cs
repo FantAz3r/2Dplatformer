@@ -8,7 +8,6 @@ using UnityEngine;
 [RequireComponent(typeof(GroundDetecter))]
 [RequireComponent(typeof(Health))]
 [RequireComponent(typeof(Patruller))]
-[RequireComponent(typeof(Fliper))]
 
 public class Slime : MonoBehaviour
 {

@@ -7,11 +7,11 @@ using UnityEngine;
 [RequireComponent(typeof(Mover))]
 [RequireComponent(typeof(GroundDetecter))]
 [RequireComponent(typeof(Health))]
-[RequireComponent(typeof(Fliper))]
-
 
 public class Character : MonoBehaviour
 {
+    [SerializeField] private Fliper _fliper;
+
     private AnimationUpdater _animationUpdater;
     private Rigidbody2D _rigidbody;
     private InputService _inputService;
@@ -20,7 +20,6 @@ public class Character : MonoBehaviour
     private GroundDetecter _groundDetecter;
     private Health _health;
     private PlayerAttack _playerAttack;
-    private Fliper _fliper;
 
 
     private void Awake()
@@ -33,7 +32,6 @@ public class Character : MonoBehaviour
         _groundDetecter = GetComponent<GroundDetecter>();
         _health = GetComponent<Health>();
         _playerAttack = GetComponent<PlayerAttack>();
-        _fliper = GetComponent<Fliper>();
     }
 
     private void OnEnable()

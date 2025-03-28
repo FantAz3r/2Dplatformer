@@ -3,17 +3,21 @@ using UnityEngine;
 
 public class Chaser : MonoBehaviour
 {
+    [SerializeField] private Fliper _fliper;
+
     private Mover _mover;
-    private Fliper _fliper;
     private Rigidbody2D _rigidbody2D;
     private Transform _target;
     private Coroutine _chaseCoroutine;
+    private Jumper _jumper;
+    private GroundDetecter _groundDetecter;
 
     private void Awake()
     {
         _mover = GetComponent<Mover>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
-        _fliper = GetComponent<Fliper>();
+        _jumper = GetComponent<Jumper>();
+        _groundDetecter = GetComponent<GroundDetecter>();
     }
 
     public void StartChasing(Transform target)
