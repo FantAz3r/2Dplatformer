@@ -5,21 +5,20 @@ using UnityEngine;
 [RequireComponent(typeof(AnimationUpdater))]
 [RequireComponent(typeof(Jumper))]
 [RequireComponent(typeof(Mover))]
-[RequireComponent(typeof(GroundDetecter))]
 [RequireComponent(typeof(Health))]
 
 public class Character : MonoBehaviour
 {
     [SerializeField] private Fliper _fliper;
+    [SerializeField] private GroundDetecter _groundDetecter;
 
     private AnimationUpdater _animationUpdater;
     private Rigidbody2D _rigidbody;
     private InputService _inputService;
     private Mover _mover;
     private Jumper _jumper;
-    private GroundDetecter _groundDetecter;
-    private Health _health;
     private PlayerAttack _playerAttack;
+    private VampireAbility _vampireAbility;
 
 
     private void Awake()
@@ -29,9 +28,8 @@ public class Character : MonoBehaviour
         _animationUpdater = GetComponent<AnimationUpdater>();
         _jumper = GetComponent<Jumper>();
         _mover = GetComponent<Mover>();
-        _groundDetecter = GetComponent<GroundDetecter>();
-        _health = GetComponent<Health>();
         _playerAttack = GetComponent<PlayerAttack>();
+        _vampireAbility = GetComponent<VampireAbility>();
     }
 
     private void OnEnable()
@@ -42,6 +40,7 @@ public class Character : MonoBehaviour
         _inputService.MouseButtonPushed += Attack;
         _inputService.MouseMoved += RotateCharacterToMouse;
         _groundDetecter.Grounded += SetGrounded;
+        _inputService.AbilityActivated += UseAbility;
     }
 
     private void OnDisable()
@@ -52,6 +51,7 @@ public class Character : MonoBehaviour
         _inputService.MouseButtonPushed -= Attack;
         _inputService.MouseMoved -= RotateCharacterToMouse;
         _groundDetecter.Grounded -= SetGrounded;
+        _inputService.AbilityActivated -= UseAbility;
     }
 
     private void Move(float direction)
@@ -83,5 +83,10 @@ public class Character : MonoBehaviour
     public void SetGrounded()
     {
         _animationUpdater.SetGrounded(true);
+    }
+
+    private void UseAbility()
+    {
+        _vampireAbility.ActivateAbility();
     }
 }

@@ -15,7 +15,6 @@ public class Wallet : MonoBehaviour
         {
             Money += _moneyPerCoin;
             AmountChange?.Invoke();
-            Destroy(coin.gameObject);
         }
     }
 }

@@ -3,13 +3,13 @@ using UnityEngine;
 
 public class GroundDetecter : MonoBehaviour
 {
-    [SerializeField] private Collider2D _groundCheck;
     [SerializeField] private LayerMask _groundLayer;
+    [SerializeField] private BoxCollider2D _groundDetecter;
 
     private int _counter = 0;
     public bool IsGrounded => _counter > 0;
 
-    public event Action Grounded; 
+    public event Action Grounded;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

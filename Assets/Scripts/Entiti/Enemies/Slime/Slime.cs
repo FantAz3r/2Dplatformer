@@ -2,7 +2,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Attacker))]
-[RequireComponent(typeof(PlayerFounder))]
+[RequireComponent(typeof(EntityDetecter))]
 [RequireComponent(typeof(Jumper))]
 [RequireComponent(typeof(Mover))]
 [RequireComponent(typeof(GroundDetecter))]
@@ -11,7 +11,7 @@ using UnityEngine;
 
 public class Slime : MonoBehaviour
 {
-    private PlayerFounder _playerFounder;
+    private EntityDetecter _entityDetecter;
     private Attacker _attacker;
     private Patruller _patruller;
     private Pusher _pusher;
@@ -20,7 +20,7 @@ public class Slime : MonoBehaviour
     private void Awake()
     {
         _attacker = GetComponent<Attacker>();
-        _playerFounder = GetComponent<PlayerFounder>();
+        _entityDetecter = GetComponent<EntityDetecter>();
         _patruller = GetComponent<Patruller>();
         _pusher = GetComponent<Pusher>();
         _chaser = GetComponent<Chaser>();
@@ -33,20 +33,20 @@ public class Slime : MonoBehaviour
 
     private void OnEnable()
     {
-        _playerFounder.PlayerDetected += OnPlayerDetected;  
-        _playerFounder.PlayerLost += OnPlayerLost;          
+        _entityDetecter.EntityDetected += OnPlayerDetected;
+        _entityDetecter.EntityLost += OnPlayerLost;          
     }
 
     private void OnDisable()
     {
-        _playerFounder.PlayerDetected -= OnPlayerDetected;  
-        _playerFounder.PlayerLost -= OnPlayerLost;          
+        _entityDetecter.EntityDetected -= OnPlayerDetected;
+        _entityDetecter.EntityLost -= OnPlayerLost;          
     }
 
     private void OnPlayerDetected()
     {
         _patruller.StopPatrol();
-        _chaser.StartChasing(_playerFounder.GetTarget());
+        _chaser.StartChasing(_entityDetecter.GetNearestEnemy());
     }
 
     private void OnPlayerLost()

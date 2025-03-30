@@ -6,7 +6,7 @@ public class InputService : MonoBehaviour
     private const string Horizontal = nameof(Horizontal);
 
     [SerializeField] private KeyCode JumpKey = KeyCode.Space;
-
+    [SerializeField] private KeyCode AbilityKey = KeyCode.E;
     private int leftMouseButton = 0;
 
     public event Action Jumped;
@@ -14,6 +14,7 @@ public class InputService : MonoBehaviour
     public event Action<float> MovedLeft;
     public event Action<Vector2> MouseButtonPushed;
     public event Action<float> MouseMoved;
+    public event Action AbilityActivated;
     public float Direction { get; private set; }
 
     private void Update()
@@ -33,6 +34,11 @@ public class InputService : MonoBehaviour
         if (Direction>0)
         {
             MovedLeft?.Invoke(Direction);
+        }
+
+        if(Input.GetKeyDown(AbilityKey))
+        {
+            AbilityActivated?.Invoke();
         }
 
         if (Input.GetMouseButtonDown(leftMouseButton))
