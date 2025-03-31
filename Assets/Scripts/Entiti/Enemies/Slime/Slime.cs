@@ -57,10 +57,13 @@ public class Slime : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.TryGetComponent(out Health target))
+        if(collision.collider.TryGetComponent<Character>(out _))
         {
-            _attacker.Attack(target);
-            _pusher.PushBack(target);
+            if (collision.collider.TryGetComponent(out Health target))
+            {
+                _attacker.Attack(target);
+                _pusher.PushBack(target);
+            }
         }
     }
 }

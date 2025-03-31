@@ -17,9 +17,11 @@ public class VampireAbility : MonoBehaviour
     private WaitForSeconds _timer;
     private float currentCoolDown = 0;
 
-    public event Action<float> AbilityEnabled;
+    public event Action<float,float> TimePassed;
     public event Action<float> CooldownStarted;
+    public event Action<float> AbilityActivated;
 
+    
 
     private void Awake()
     {
@@ -37,20 +39,27 @@ public class VampireAbility : MonoBehaviour
         {
             _isActive = true;
             _radiusIndicator.SetActive(true);
-            AbilityEnabled?.Invoke(_activeTime);
             StartCoroutine(HandleVampirism());
         }
     }
 
     private IEnumerator HandleVampirism()
     {
-        float currentActiveTime = _activeTime;
+        float currentActiveTime = 0;
 
-        while (currentActiveTime > 0)
+        while (currentActiveTime < _activeTime)
         {
+            float oneSecond = 0f;
+
+            while (oneSecond < 1)
+            {
+                oneSecond += Time.deltaTime;
+                TimePassed?.Invoke(_activeTime, currentActiveTime + oneSecond);
+                yield return null;
+            }
+
             HandleAbility();
-            currentActiveTime -= _damageRate;
-            yield return _timer;
+            currentActiveTime++;
         }
 
         DeactivateAbility();
@@ -62,14 +71,11 @@ public class VampireAbility : MonoBehaviour
 
         if (nearestEnemy != null)
         {
-
-            Health enemyHealth = nearestEnemy.GetComponent<Health>();
-
-            if (enemyHealth != null)
-            {
-                enemyHealth.TakeDamage(_damage);
-                _health.Heal(_damage);
-            }
+            nearestEnemy.TryGetComponent(out Health enemyHealth);
+            float enemyCurrentHealth = enemyHealth.CurrentHealth;
+            float damageDealt = Mathf.Min(_damage, enemyCurrentHealth);
+            enemyHealth.TakeDamage(damageDealt);
+            _health.Heal(damageDealt);
         }
     }
 
@@ -77,9 +83,9 @@ public class VampireAbility : MonoBehaviour
     {
         _isActive = false;
         _radiusIndicator.SetActive(false);
-        CooldownStarted?.Invoke(_coolDown);
         StartCoroutine(HandleCooldown());
     }
+
 
     private IEnumerator HandleCooldown()
     {
@@ -87,8 +93,9 @@ public class VampireAbility : MonoBehaviour
 
         while (currentCoolDown > 0)
         {
-            currentCoolDown -= Time.deltaTime; 
-            yield return null; 
+            currentCoolDown -= Time.deltaTime;
+            TimePassed?.Invoke(_coolDown, currentCoolDown);
+            yield return null;
         }
     }
 }

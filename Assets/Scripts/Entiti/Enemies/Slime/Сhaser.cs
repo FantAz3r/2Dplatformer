@@ -9,15 +9,11 @@ public class Chaser : MonoBehaviour
     private Rigidbody2D _rigidbody2D;
     private Transform _target;
     private Coroutine _chaseCoroutine;
-    private Jumper _jumper;
-    private GroundDetecter _groundDetecter;
 
     private void Awake()
     {
         _mover = GetComponent<Mover>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
-        _jumper = GetComponent<Jumper>();
-        _groundDetecter = GetComponent<GroundDetecter>();
     }
 
     public void StartChasing(Transform target)
