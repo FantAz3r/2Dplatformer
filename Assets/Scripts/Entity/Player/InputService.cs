@@ -7,6 +7,7 @@ public class InputService : MonoBehaviour
 
     [SerializeField] private KeyCode JumpKey = KeyCode.Space;
     [SerializeField] private KeyCode AbilityKey = KeyCode.E;
+
     private int leftMouseButton = 0;
 
     public event Action Jumped;

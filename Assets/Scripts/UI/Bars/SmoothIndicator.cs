@@ -1,6 +1,8 @@
 using System.Collections;
 using UnityEngine;
 
+[RequireComponent(typeof(RectTransform))]
+
 public abstract class SmoothIndicator : Indicator
 {
     private RectTransform _healthSprite;

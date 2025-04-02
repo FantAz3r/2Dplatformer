@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(RectTransform))]
 public class RowSpriteBar : Indicator
 {
     private RectTransform _healthSprite;

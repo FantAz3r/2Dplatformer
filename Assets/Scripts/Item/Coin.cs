@@ -1,10 +1,13 @@
 using UnityEngine;
 
-public class Coin : MonoBehaviour
+public class Coin : MonoBehaviour, ICollectible
 {
     [SerializeField] private float _moveAmplitude = 0.5f;
     [SerializeField] private float _moveSpeed = 2f;
     [SerializeField] private float _rotationSpeed = 180f;
+
+    private int _moneyPerCoin = 1;
+    public int MoneyPerCoin => _moneyPerCoin;
 
     private void Update()
     {
@@ -15,9 +18,15 @@ public class Coin : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.TryGetComponent<Character>(out _))
+        if (collision.TryGetComponent<ICollector>(out ICollector collector))
         {
+            collector.Collect(this); 
             Destroy(gameObject);
         }
+    }
+
+    public void Accept(ICollector collector)
+    {
+        collector.Collect(this);
     }
 }
